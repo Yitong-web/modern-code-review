@@ -41,7 +41,7 @@ int main(){
         do {
                 cout << "Which cell to mark? i:[0..2], j:[0..2]: ";
                 cin >> i >> j;
-            } while (game[i][j] != ' ');
+            } while (i < 0 || i > 2 || j < 0 || j > 2 || game[i][j] != ' ');
         if (turn == false) 
         game[i][j] = 'X';
         else  
